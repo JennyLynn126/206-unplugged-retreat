@@ -112,6 +112,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -162,10 +163,7 @@ address {
   margin: 50px 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+
 
 
 /************** Header - Footer Styles ****************/
@@ -173,6 +171,7 @@ ul {
 
 
 header, footer {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,19 +180,20 @@ header, footer {
 }
 
 header {
-  
+  padding: 15px 0;
 }
 
 
 header .content-wrapper {
+  color: #e2e3ed;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -201,20 +201,29 @@ header .content-wrapper {
 
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
@@ -259,15 +268,43 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+}
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* Features */
 
@@ -296,6 +333,7 @@ aside {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -304,14 +342,15 @@ aside {
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  
   flex-flow: row wrap;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -325,6 +364,7 @@ About Page
 =============================================*/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,6 +373,7 @@ About Page
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,6 +389,7 @@ FAQ Page
 =============================================*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,10 +406,16 @@ FAQ Page
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
+  font-weight: 700;
 }
 
  /* ==========================================================================
